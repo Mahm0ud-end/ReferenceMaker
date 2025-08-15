@@ -44,6 +44,7 @@ A Python tool that automatically extracts bibliographic information from PDF res
 1. Download the compiled executable from releases
 2. Place the `.env` file in the same directory as the executable
 3. Run the executable directly
+> **Note:** The compiled executable currently available is only compatible with Mac M1 (Apple Silicon) devices. However, you can package your own executable for other platforms using PyInstaller.
 
 ## 🔧 Building Executable
 
@@ -56,7 +57,7 @@ To create a standalone executable:
 
 2. Build using the provided spec file:
    ```bash
-   pyinstaller refmaker.spec --clean
+   pyinstaller --onefile --clean refmaker.py
    ```
 
 The executable will be created in the `dist/` directory.
